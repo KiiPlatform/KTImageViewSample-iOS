@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		086A70B5170944D600D6FEDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086A70B4170944D600D6FEDA /* UIKit.framework */; };
+		086A70B7170944D600D6FEDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086A70B6170944D600D6FEDA /* Foundation.framework */; };
+		086A70B9170944D600D6FEDA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086A70B8170944D600D6FEDA /* CoreGraphics.framework */; };
+		086A70BF170944D600D6FEDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 086A70BD170944D600D6FEDA /* InfoPlist.strings */; };
+		086A70C1170944D600D6FEDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 086A70C0170944D600D6FEDA /* main.m */; };
+		086A70C5170944D600D6FEDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 086A70C4170944D600D6FEDA /* AppDelegate.m */; };
+		086A70CE170944D600D6FEDA /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086A70CD170944D600D6FEDA /* UploadViewController.m */; };
+		086A70D5170944D600D6FEDA /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086A70D4170944D600D6FEDA /* DownloadViewController.m */; };
+		086A70DC170944D600D6FEDA /* UploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086A70DA170944D600D6FEDA /* UploadViewController.xib */; };
+		086A70DF170944D600D6FEDA /* DownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086A70DD170944D600D6FEDA /* DownloadViewController.xib */; };
+		086A71511709616600D6FEDA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086A71501709616600D6FEDA /* QuartzCore.framework */; };
+		086A71531709618600D6FEDA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086A71521709618600D6FEDA /* MobileCoreServices.framework */; };
+		CAE3D9E617B22BD9000AA9AA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D97117B22BD8000AA9AA /* .gitignore */; };
+		CAE3D9E717B22BD9000AA9AA /* NSMutableArray+KTUtilities.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D97517B22BD9000AA9AA /* NSMutableArray+KTUtilities.html */; };
+		CAE3D9E817B22BD9000AA9AA /* NSString+KTUtilities.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D97617B22BD9000AA9AA /* NSString+KTUtilities.html */; };
+		CAE3D9E917B22BD9000AA9AA /* UIColor+KTUtilities.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D97717B22BD9000AA9AA /* UIColor+KTUtilities.html */; };
+		CAE3D9EA17B22BD9000AA9AA /* UIImage+KTUtilities.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D97817B22BD9000AA9AA /* UIImage+KTUtilities.html */; };
+		CAE3D9EB17B22BD9000AA9AA /* UIView+KTUtilities.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D97917B22BD9000AA9AA /* UIView+KTUtilities.html */; };
+		CAE3D9EC17B22BD9000AA9AA /* KTAlert.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D97B17B22BD9000AA9AA /* KTAlert.html */; };
+		CAE3D9ED17B22BD9000AA9AA /* KTAlertBar.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D97C17B22BD9000AA9AA /* KTAlertBar.html */; };
+		CAE3D9EE17B22BD9000AA9AA /* KTAlertToast.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D97D17B22BD9000AA9AA /* KTAlertToast.html */; };
+		CAE3D9EF17B22BD9000AA9AA /* KTAppRater.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D97E17B22BD9000AA9AA /* KTAppRater.html */; };
+		CAE3D9F017B22BD9000AA9AA /* KTButton.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D97F17B22BD9000AA9AA /* KTButton.html */; };
+		CAE3D9F117B22BD9000AA9AA /* KTCircularProgressIndicator.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98017B22BD9000AA9AA /* KTCircularProgressIndicator.html */; };
+		CAE3D9F217B22BD9000AA9AA /* KTForgotPasswordViewController.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98117B22BD9000AA9AA /* KTForgotPasswordViewController.html */; };
+		CAE3D9F317B22BD9000AA9AA /* KTImageView.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98217B22BD9000AA9AA /* KTImageView.html */; };
+		CAE3D9F417B22BD9000AA9AA /* KTLoader.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98317B22BD9000AA9AA /* KTLoader.html */; };
+		CAE3D9F517B22BD9000AA9AA /* KTLoginViewController.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98417B22BD9000AA9AA /* KTLoginViewController.html */; };
+		CAE3D9F617B22BD9000AA9AA /* KTNetworkingUtilities.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98517B22BD9000AA9AA /* KTNetworkingUtilities.html */; };
+		CAE3D9F717B22BD9000AA9AA /* KTProgressIndicator.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98617B22BD9000AA9AA /* KTProgressIndicator.html */; };
+		CAE3D9F817B22BD9000AA9AA /* KTRegistrationViewController.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98717B22BD9000AA9AA /* KTRegistrationViewController.html */; };
+		CAE3D9F917B22BD9000AA9AA /* KTTableViewController.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98817B22BD9000AA9AA /* KTTableViewController.html */; };
+		CAE3D9FA17B22BD9000AA9AA /* KTTextField.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98917B22BD9000AA9AA /* KTTextField.html */; };
+		CAE3D9FB17B22BD9000AA9AA /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98B17B22BD9000AA9AA /* styles.css */; };
+		CAE3D9FC17B22BD9000AA9AA /* stylesPrint.css in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98C17B22BD9000AA9AA /* stylesPrint.css */; };
+		CAE3D9FD17B22BD9000AA9AA /* hierarchy.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98D17B22BD9000AA9AA /* hierarchy.html */; };
+		CAE3D9FE17B22BD9000AA9AA /* button_bar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D98F17B22BD9000AA9AA /* button_bar_background.png */; };
+		CAE3D9FF17B22BD9000AA9AA /* disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D99017B22BD9000AA9AA /* disclosure.png */; };
+		CAE3DA0017B22BD9000AA9AA /* disclosure_open.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D99117B22BD9000AA9AA /* disclosure_open.png */; };
+		CAE3DA0117B22BD9000AA9AA /* library_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D99217B22BD9000AA9AA /* library_background.png */; };
+		CAE3DA0217B22BD9000AA9AA /* title_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D99317B22BD9000AA9AA /* title_background.png */; };
+		CAE3DA0317B22BD9000AA9AA /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D99417B22BD9000AA9AA /* index.html */; };
+		CAE3DA0417B22BD9000AA9AA /* KTTableViewDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D99617B22BD9000AA9AA /* KTTableViewDelegate.html */; };
+		CAE3DA0517B22BD9000AA9AA /* KiiToolkit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D99817B22BD9000AA9AA /* KiiToolkit.podspec */; };
+		CAE3DA0617B22BD9000AA9AA /* KTAppRater.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D99B17B22BD9000AA9AA /* KTAppRater.m */; };
+		CAE3DA0717B22BD9000AA9AA /* kt_login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D99E17B22BD9000AA9AA /* kt_login_bg.png */; };
+		CAE3DA0817B22BD9000AA9AA /* kt_login_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D99F17B22BD9000AA9AA /* kt_login_bg@2x.png */; };
+		CAE3DA0917B22BD9000AA9AA /* kt_login_close.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D9A017B22BD9000AA9AA /* kt_login_close.png */; };
+		CAE3DA0A17B22BD9000AA9AA /* kt_login_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D9A117B22BD9000AA9AA /* kt_login_close@2x.png */; };
+		CAE3DA0B17B22BD9000AA9AA /* kt_login_kii_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D9A217B22BD9000AA9AA /* kt_login_kii_logo.png */; };
+		CAE3DA0C17B22BD9000AA9AA /* kt_login_kii_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D9A317B22BD9000AA9AA /* kt_login_kii_logo@2x.png */; };
+		CAE3DA0D17B22BD9000AA9AA /* KTForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9A517B22BD9000AA9AA /* KTForgotPasswordViewController.m */; };
+		CAE3DA0E17B22BD9000AA9AA /* KTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9A717B22BD9000AA9AA /* KTLoginViewController.m */; };
+		CAE3DA0F17B22BD9000AA9AA /* KTRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9A917B22BD9000AA9AA /* KTRegistrationViewController.m */; };
+		CAE3DA1017B22BD9000AA9AA /* CKRefreshArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9AC17B22BD9000AA9AA /* CKRefreshArrowView.m */; };
+		CAE3DA1117B22BD9000AA9AA /* KTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9AE17B22BD9000AA9AA /* KTTableViewController.m */; };
+		CAE3DA1217B22BD9000AA9AA /* KTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9B217B22BD9000AA9AA /* KTAlert.m */; };
+		CAE3DA1317B22BD9000AA9AA /* KTAlertBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9B517B22BD9000AA9AA /* KTAlertBar.m */; };
+		CAE3DA1417B22BD9000AA9AA /* KTAlertToast.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9B717B22BD9000AA9AA /* KTAlertToast.m */; };
+		CAE3DA1517B22BD9000AA9AA /* KTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9BA17B22BD9000AA9AA /* KTButton.m */; };
+		CAE3DA1617B22BD9000AA9AA /* KTCircularProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9BD17B22BD9000AA9AA /* KTCircularProgressIndicator.m */; };
+		CAE3DA1717B22BD9000AA9AA /* KTImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9C017B22BD9000AA9AA /* KTImageView.m */; };
+		CAE3DA1817B22BD9000AA9AA /* failure-indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D9C317B22BD9000AA9AA /* failure-indicator.png */; };
+		CAE3DA1917B22BD9000AA9AA /* failure-indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D9C417B22BD9000AA9AA /* failure-indicator@2x.png */; };
+		CAE3DA1A17B22BD9000AA9AA /* success-indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D9C517B22BD9000AA9AA /* success-indicator.png */; };
+		CAE3DA1B17B22BD9000AA9AA /* success-indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D9C617B22BD9000AA9AA /* success-indicator@2x.png */; };
+		CAE3DA1C17B22BD9000AA9AA /* KTLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9C817B22BD9000AA9AA /* KTLoader.m */; };
+		CAE3DA1D17B22BD9000AA9AA /* KTProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9CB17B22BD9000AA9AA /* KTProgressIndicator.m */; };
+		CAE3DA1E17B22BD9000AA9AA /* KTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9CE17B22BD9000AA9AA /* KTTextField.m */; };
+		CAE3DA1F17B22BD9000AA9AA /* NSMutableArray+KTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9D417B22BD9000AA9AA /* NSMutableArray+KTUtilities.m */; };
+		CAE3DA2017B22BD9000AA9AA /* NSString+KTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9D717B22BD9000AA9AA /* NSString+KTUtilities.m */; };
+		CAE3DA2117B22BD9000AA9AA /* UIColor+KTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9DA17B22BD9000AA9AA /* UIColor+KTUtilities.m */; };
+		CAE3DA2217B22BD9000AA9AA /* UIImage+KTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9DD17B22BD9000AA9AA /* UIImage+KTUtilities.m */; };
+		CAE3DA2317B22BD9000AA9AA /* UIView+KTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9E017B22BD9000AA9AA /* UIView+KTUtilities.m */; };
+		CAE3DA2417B22BD9000AA9AA /* KTNetworkingUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3D9E217B22BD9000AA9AA /* KTNetworkingUtilities.m */; };
+		CAE3DA2517B22BD9000AA9AA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D9E417B22BD9000AA9AA /* LICENSE */; };
+		CAE3DA2617B22BD9000AA9AA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CAE3D9E517B22BD9000AA9AA /* README.md */; };
+		CAE3DA2817B22BEC000AA9AA /* KiiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3DA2717B22BEC000AA9AA /* KiiSDK.framework */; };
+		CAE3DA2A17B22BFF000AA9AA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3DA2917B22BFF000AA9AA /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		086A70B1170944D600D6FEDA /* KTImageViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTImageViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		086A70B4170944D600D6FEDA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		086A70B6170944D600D6FEDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		086A70B8170944D600D6FEDA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		086A70BC170944D600D6FEDA /* KTImageViewSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KTImageViewSample-Info.plist"; sourceTree = "<group>"; };
+		086A70BE170944D600D6FEDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		086A70C0170944D600D6FEDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		086A70C2170944D600D6FEDA /* KTImageViewSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KTImageViewSample-Prefix.pch"; sourceTree = "<group>"; };
+		086A70C3170944D600D6FEDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		086A70C4170944D600D6FEDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		086A70CC170944D600D6FEDA /* UploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		086A70CD170944D600D6FEDA /* UploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
+		086A70D3170944D600D6FEDA /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		086A70D4170944D600D6FEDA /* DownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		086A70DB170944D600D6FEDA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UploadViewController.xib; sourceTree = "<group>"; };
+		086A70DE170944D600D6FEDA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DownloadViewController.xib; sourceTree = "<group>"; };
+		086A71501709616600D6FEDA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		086A71521709618600D6FEDA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CAE3D97117B22BD8000AA9AA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CAE3D97517B22BD9000AA9AA /* NSMutableArray+KTUtilities.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = "NSMutableArray+KTUtilities.html"; sourceTree = "<group>"; };
+		CAE3D97617B22BD9000AA9AA /* NSString+KTUtilities.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = "NSString+KTUtilities.html"; sourceTree = "<group>"; };
+		CAE3D97717B22BD9000AA9AA /* UIColor+KTUtilities.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = "UIColor+KTUtilities.html"; sourceTree = "<group>"; };
+		CAE3D97817B22BD9000AA9AA /* UIImage+KTUtilities.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = "UIImage+KTUtilities.html"; sourceTree = "<group>"; };
+		CAE3D97917B22BD9000AA9AA /* UIView+KTUtilities.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = "UIView+KTUtilities.html"; sourceTree = "<group>"; };
+		CAE3D97B17B22BD9000AA9AA /* KTAlert.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTAlert.html; sourceTree = "<group>"; };
+		CAE3D97C17B22BD9000AA9AA /* KTAlertBar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTAlertBar.html; sourceTree = "<group>"; };
+		CAE3D97D17B22BD9000AA9AA /* KTAlertToast.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTAlertToast.html; sourceTree = "<group>"; };
+		CAE3D97E17B22BD9000AA9AA /* KTAppRater.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTAppRater.html; sourceTree = "<group>"; };
+		CAE3D97F17B22BD9000AA9AA /* KTButton.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTButton.html; sourceTree = "<group>"; };
+		CAE3D98017B22BD9000AA9AA /* KTCircularProgressIndicator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTCircularProgressIndicator.html; sourceTree = "<group>"; };
+		CAE3D98117B22BD9000AA9AA /* KTForgotPasswordViewController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTForgotPasswordViewController.html; sourceTree = "<group>"; };
+		CAE3D98217B22BD9000AA9AA /* KTImageView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTImageView.html; sourceTree = "<group>"; };
+		CAE3D98317B22BD9000AA9AA /* KTLoader.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTLoader.html; sourceTree = "<group>"; };
+		CAE3D98417B22BD9000AA9AA /* KTLoginViewController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTLoginViewController.html; sourceTree = "<group>"; };
+		CAE3D98517B22BD9000AA9AA /* KTNetworkingUtilities.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTNetworkingUtilities.html; sourceTree = "<group>"; };
+		CAE3D98617B22BD9000AA9AA /* KTProgressIndicator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTProgressIndicator.html; sourceTree = "<group>"; };
+		CAE3D98717B22BD9000AA9AA /* KTRegistrationViewController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTRegistrationViewController.html; sourceTree = "<group>"; };
+		CAE3D98817B22BD9000AA9AA /* KTTableViewController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTTableViewController.html; sourceTree = "<group>"; };
+		CAE3D98917B22BD9000AA9AA /* KTTextField.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTTextField.html; sourceTree = "<group>"; };
+		CAE3D98B17B22BD9000AA9AA /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		CAE3D98C17B22BD9000AA9AA /* stylesPrint.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stylesPrint.css; sourceTree = "<group>"; };
+		CAE3D98D17B22BD9000AA9AA /* hierarchy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = hierarchy.html; sourceTree = "<group>"; };
+		CAE3D98F17B22BD9000AA9AA /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		CAE3D99017B22BD9000AA9AA /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		CAE3D99117B22BD9000AA9AA /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		CAE3D99217B22BD9000AA9AA /* library_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_background.png; sourceTree = "<group>"; };
+		CAE3D99317B22BD9000AA9AA /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		CAE3D99417B22BD9000AA9AA /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = index.html; sourceTree = "<group>"; };
+		CAE3D99617B22BD9000AA9AA /* KTTableViewDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KTTableViewDelegate.html; sourceTree = "<group>"; };
+		CAE3D99717B22BD9000AA9AA /* KiiToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiiToolkit.h; sourceTree = "<group>"; };
+		CAE3D99817B22BD9000AA9AA /* KiiToolkit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KiiToolkit.podspec; sourceTree = "<group>"; };
+		CAE3D99A17B22BD9000AA9AA /* KTAppRater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTAppRater.h; sourceTree = "<group>"; };
+		CAE3D99B17B22BD9000AA9AA /* KTAppRater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTAppRater.m; sourceTree = "<group>"; };
+		CAE3D99E17B22BD9000AA9AA /* kt_login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kt_login_bg.png; sourceTree = "<group>"; };
+		CAE3D99F17B22BD9000AA9AA /* kt_login_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kt_login_bg@2x.png"; sourceTree = "<group>"; };
+		CAE3D9A017B22BD9000AA9AA /* kt_login_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kt_login_close.png; sourceTree = "<group>"; };
+		CAE3D9A117B22BD9000AA9AA /* kt_login_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kt_login_close@2x.png"; sourceTree = "<group>"; };
+		CAE3D9A217B22BD9000AA9AA /* kt_login_kii_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kt_login_kii_logo.png; sourceTree = "<group>"; };
+		CAE3D9A317B22BD9000AA9AA /* kt_login_kii_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kt_login_kii_logo@2x.png"; sourceTree = "<group>"; };
+		CAE3D9A417B22BD9000AA9AA /* KTForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTForgotPasswordViewController.h; sourceTree = "<group>"; };
+		CAE3D9A517B22BD9000AA9AA /* KTForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTForgotPasswordViewController.m; sourceTree = "<group>"; };
+		CAE3D9A617B22BD9000AA9AA /* KTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTLoginViewController.h; sourceTree = "<group>"; };
+		CAE3D9A717B22BD9000AA9AA /* KTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTLoginViewController.m; sourceTree = "<group>"; };
+		CAE3D9A817B22BD9000AA9AA /* KTRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRegistrationViewController.h; sourceTree = "<group>"; };
+		CAE3D9A917B22BD9000AA9AA /* KTRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRegistrationViewController.m; sourceTree = "<group>"; };
+		CAE3D9AB17B22BD9000AA9AA /* CKRefreshArrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKRefreshArrowView.h; sourceTree = "<group>"; };
+		CAE3D9AC17B22BD9000AA9AA /* CKRefreshArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKRefreshArrowView.m; sourceTree = "<group>"; };
+		CAE3D9AD17B22BD9000AA9AA /* KTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTableViewController.h; sourceTree = "<group>"; };
+		CAE3D9AE17B22BD9000AA9AA /* KTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTableViewController.m; sourceTree = "<group>"; };
+		CAE3D9B117B22BD9000AA9AA /* KTAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTAlert.h; sourceTree = "<group>"; };
+		CAE3D9B217B22BD9000AA9AA /* KTAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTAlert.m; sourceTree = "<group>"; };
+		CAE3D9B417B22BD9000AA9AA /* KTAlertBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTAlertBar.h; sourceTree = "<group>"; };
+		CAE3D9B517B22BD9000AA9AA /* KTAlertBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTAlertBar.m; sourceTree = "<group>"; };
+		CAE3D9B617B22BD9000AA9AA /* KTAlertToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTAlertToast.h; sourceTree = "<group>"; };
+		CAE3D9B717B22BD9000AA9AA /* KTAlertToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTAlertToast.m; sourceTree = "<group>"; };
+		CAE3D9B917B22BD9000AA9AA /* KTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTButton.h; sourceTree = "<group>"; };
+		CAE3D9BA17B22BD9000AA9AA /* KTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTButton.m; sourceTree = "<group>"; };
+		CAE3D9BC17B22BD9000AA9AA /* KTCircularProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTCircularProgressIndicator.h; sourceTree = "<group>"; };
+		CAE3D9BD17B22BD9000AA9AA /* KTCircularProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTCircularProgressIndicator.m; sourceTree = "<group>"; };
+		CAE3D9BF17B22BD9000AA9AA /* KTImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTImageView.h; sourceTree = "<group>"; };
+		CAE3D9C017B22BD9000AA9AA /* KTImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTImageView.m; sourceTree = "<group>"; };
+		CAE3D9C317B22BD9000AA9AA /* failure-indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "failure-indicator.png"; sourceTree = "<group>"; };
+		CAE3D9C417B22BD9000AA9AA /* failure-indicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "failure-indicator@2x.png"; sourceTree = "<group>"; };
+		CAE3D9C517B22BD9000AA9AA /* success-indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success-indicator.png"; sourceTree = "<group>"; };
+		CAE3D9C617B22BD9000AA9AA /* success-indicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success-indicator@2x.png"; sourceTree = "<group>"; };
+		CAE3D9C717B22BD9000AA9AA /* KTLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTLoader.h; sourceTree = "<group>"; };
+		CAE3D9C817B22BD9000AA9AA /* KTLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTLoader.m; sourceTree = "<group>"; };
+		CAE3D9CA17B22BD9000AA9AA /* KTProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTProgressIndicator.h; sourceTree = "<group>"; };
+		CAE3D9CB17B22BD9000AA9AA /* KTProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTProgressIndicator.m; sourceTree = "<group>"; };
+		CAE3D9CD17B22BD9000AA9AA /* KTTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTextField.h; sourceTree = "<group>"; };
+		CAE3D9CE17B22BD9000AA9AA /* KTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTextField.m; sourceTree = "<group>"; };
+		CAE3D9CF17B22BD9000AA9AA /* KTUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTUI.h; sourceTree = "<group>"; };
+		CAE3D9D317B22BD9000AA9AA /* NSMutableArray+KTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+KTUtilities.h"; sourceTree = "<group>"; };
+		CAE3D9D417B22BD9000AA9AA /* NSMutableArray+KTUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+KTUtilities.m"; sourceTree = "<group>"; };
+		CAE3D9D617B22BD9000AA9AA /* NSString+KTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KTUtilities.h"; sourceTree = "<group>"; };
+		CAE3D9D717B22BD9000AA9AA /* NSString+KTUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KTUtilities.m"; sourceTree = "<group>"; };
+		CAE3D9D917B22BD9000AA9AA /* UIColor+KTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KTUtilities.h"; sourceTree = "<group>"; };
+		CAE3D9DA17B22BD9000AA9AA /* UIColor+KTUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KTUtilities.m"; sourceTree = "<group>"; };
+		CAE3D9DC17B22BD9000AA9AA /* UIImage+KTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KTUtilities.h"; sourceTree = "<group>"; };
+		CAE3D9DD17B22BD9000AA9AA /* UIImage+KTUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KTUtilities.m"; sourceTree = "<group>"; };
+		CAE3D9DF17B22BD9000AA9AA /* UIView+KTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KTUtilities.h"; sourceTree = "<group>"; };
+		CAE3D9E017B22BD9000AA9AA /* UIView+KTUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KTUtilities.m"; sourceTree = "<group>"; };
+		CAE3D9E117B22BD9000AA9AA /* KTNetworkingUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNetworkingUtilities.h; sourceTree = "<group>"; };
+		CAE3D9E217B22BD9000AA9AA /* KTNetworkingUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTNetworkingUtilities.m; sourceTree = "<group>"; };
+		CAE3D9E317B22BD9000AA9AA /* KTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTUtilities.h; sourceTree = "<group>"; };
+		CAE3D9E417B22BD9000AA9AA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CAE3D9E517B22BD9000AA9AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		CAE3DA2717B22BEC000AA9AA /* KiiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiiSDK.framework; sourceTree = "<group>"; };
+		CAE3DA2917B22BFF000AA9AA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		086A70AE170944D600D6FEDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE3DA2A17B22BFF000AA9AA /* SystemConfiguration.framework in Frameworks */,
+				086A70B5170944D600D6FEDA /* UIKit.framework in Frameworks */,
+				086A70B7170944D600D6FEDA /* Foundation.framework in Frameworks */,
+				086A70B9170944D600D6FEDA /* CoreGraphics.framework in Frameworks */,
+				086A71531709618600D6FEDA /* MobileCoreServices.framework in Frameworks */,
+				086A71511709616600D6FEDA /* QuartzCore.framework in Frameworks */,
+				CAE3DA2817B22BEC000AA9AA /* KiiSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		086A70A8170944D600D6FEDA = {
+			isa = PBXGroup;
+			children = (
+				CAE3D97017B22BD8000AA9AA /* KiiToolkit-iOS */,
+				086A70BA170944D600D6FEDA /* KTImageViewSample */,
+				086A70B3170944D600D6FEDA /* Frameworks */,
+				086A70B2170944D600D6FEDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		086A70B2170944D600D6FEDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				086A70B1170944D600D6FEDA /* KTImageViewSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		086A70B3170944D600D6FEDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3DA2917B22BFF000AA9AA /* SystemConfiguration.framework */,
+				CAE3DA2717B22BEC000AA9AA /* KiiSDK.framework */,
+				086A71521709618600D6FEDA /* MobileCoreServices.framework */,
+				086A71501709616600D6FEDA /* QuartzCore.framework */,
+				086A70B4170944D600D6FEDA /* UIKit.framework */,
+				086A70B6170944D600D6FEDA /* Foundation.framework */,
+				086A70B8170944D600D6FEDA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		086A70BA170944D600D6FEDA /* KTImageViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				086A70C3170944D600D6FEDA /* AppDelegate.h */,
+				086A70C4170944D600D6FEDA /* AppDelegate.m */,
+				086A70CC170944D600D6FEDA /* UploadViewController.h */,
+				086A70CD170944D600D6FEDA /* UploadViewController.m */,
+				086A70D3170944D600D6FEDA /* DownloadViewController.h */,
+				086A70D4170944D600D6FEDA /* DownloadViewController.m */,
+				086A70DA170944D600D6FEDA /* UploadViewController.xib */,
+				086A70DD170944D600D6FEDA /* DownloadViewController.xib */,
+				086A70BB170944D600D6FEDA /* Supporting Files */,
+			);
+			path = KTImageViewSample;
+			sourceTree = "<group>";
+		};
+		086A70BB170944D600D6FEDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				086A70BC170944D600D6FEDA /* KTImageViewSample-Info.plist */,
+				086A70BD170944D600D6FEDA /* InfoPlist.strings */,
+				086A70C0170944D600D6FEDA /* main.m */,
+				086A70C2170944D600D6FEDA /* KTImageViewSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAE3D97017B22BD8000AA9AA /* KiiToolkit-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D97117B22BD8000AA9AA /* .gitignore */,
+				CAE3D97217B22BD8000AA9AA /* Documentation */,
+				CAE3D99717B22BD9000AA9AA /* KiiToolkit.h */,
+				CAE3D99817B22BD9000AA9AA /* KiiToolkit.podspec */,
+				CAE3D99917B22BD9000AA9AA /* KTAppRater */,
+				CAE3D99C17B22BD9000AA9AA /* KTLoginViewController */,
+				CAE3D9AA17B22BD9000AA9AA /* KTTableViewController */,
+				CAE3D9AF17B22BD9000AA9AA /* KTUI */,
+				CAE3D9D017B22BD9000AA9AA /* KTUtilities */,
+				CAE3D9E417B22BD9000AA9AA /* LICENSE */,
+				CAE3D9E517B22BD9000AA9AA /* README.md */,
+			);
+			path = "KiiToolkit-iOS";
+			sourceTree = "<group>";
+		};
+		CAE3D97217B22BD8000AA9AA /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D97317B22BD8000AA9AA /* html */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		CAE3D97317B22BD8000AA9AA /* html */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D97417B22BD8000AA9AA /* Categories */,
+				CAE3D97A17B22BD9000AA9AA /* Classes */,
+				CAE3D98A17B22BD9000AA9AA /* css */,
+				CAE3D98D17B22BD9000AA9AA /* hierarchy.html */,
+				CAE3D98E17B22BD9000AA9AA /* img */,
+				CAE3D99417B22BD9000AA9AA /* index.html */,
+				CAE3D99517B22BD9000AA9AA /* Protocols */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		CAE3D97417B22BD8000AA9AA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D97517B22BD9000AA9AA /* NSMutableArray+KTUtilities.html */,
+				CAE3D97617B22BD9000AA9AA /* NSString+KTUtilities.html */,
+				CAE3D97717B22BD9000AA9AA /* UIColor+KTUtilities.html */,
+				CAE3D97817B22BD9000AA9AA /* UIImage+KTUtilities.html */,
+				CAE3D97917B22BD9000AA9AA /* UIView+KTUtilities.html */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		CAE3D97A17B22BD9000AA9AA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D97B17B22BD9000AA9AA /* KTAlert.html */,
+				CAE3D97C17B22BD9000AA9AA /* KTAlertBar.html */,
+				CAE3D97D17B22BD9000AA9AA /* KTAlertToast.html */,
+				CAE3D97E17B22BD9000AA9AA /* KTAppRater.html */,
+				CAE3D97F17B22BD9000AA9AA /* KTButton.html */,
+				CAE3D98017B22BD9000AA9AA /* KTCircularProgressIndicator.html */,
+				CAE3D98117B22BD9000AA9AA /* KTForgotPasswordViewController.html */,
+				CAE3D98217B22BD9000AA9AA /* KTImageView.html */,
+				CAE3D98317B22BD9000AA9AA /* KTLoader.html */,
+				CAE3D98417B22BD9000AA9AA /* KTLoginViewController.html */,
+				CAE3D98517B22BD9000AA9AA /* KTNetworkingUtilities.html */,
+				CAE3D98617B22BD9000AA9AA /* KTProgressIndicator.html */,
+				CAE3D98717B22BD9000AA9AA /* KTRegistrationViewController.html */,
+				CAE3D98817B22BD9000AA9AA /* KTTableViewController.html */,
+				CAE3D98917B22BD9000AA9AA /* KTTextField.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CAE3D98A17B22BD9000AA9AA /* css */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D98B17B22BD9000AA9AA /* styles.css */,
+				CAE3D98C17B22BD9000AA9AA /* stylesPrint.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		CAE3D98E17B22BD9000AA9AA /* img */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D98F17B22BD9000AA9AA /* button_bar_background.png */,
+				CAE3D99017B22BD9000AA9AA /* disclosure.png */,
+				CAE3D99117B22BD9000AA9AA /* disclosure_open.png */,
+				CAE3D99217B22BD9000AA9AA /* library_background.png */,
+				CAE3D99317B22BD9000AA9AA /* title_background.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		CAE3D99517B22BD9000AA9AA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D99617B22BD9000AA9AA /* KTTableViewDelegate.html */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CAE3D99917B22BD9000AA9AA /* KTAppRater */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D99A17B22BD9000AA9AA /* KTAppRater.h */,
+				CAE3D99B17B22BD9000AA9AA /* KTAppRater.m */,
+			);
+			path = KTAppRater;
+			sourceTree = "<group>";
+		};
+		CAE3D99C17B22BD9000AA9AA /* KTLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D99D17B22BD9000AA9AA /* images */,
+				CAE3D9A417B22BD9000AA9AA /* KTForgotPasswordViewController.h */,
+				CAE3D9A517B22BD9000AA9AA /* KTForgotPasswordViewController.m */,
+				CAE3D9A617B22BD9000AA9AA /* KTLoginViewController.h */,
+				CAE3D9A717B22BD9000AA9AA /* KTLoginViewController.m */,
+				CAE3D9A817B22BD9000AA9AA /* KTRegistrationViewController.h */,
+				CAE3D9A917B22BD9000AA9AA /* KTRegistrationViewController.m */,
+			);
+			path = KTLoginViewController;
+			sourceTree = "<group>";
+		};
+		CAE3D99D17B22BD9000AA9AA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D99E17B22BD9000AA9AA /* kt_login_bg.png */,
+				CAE3D99F17B22BD9000AA9AA /* kt_login_bg@2x.png */,
+				CAE3D9A017B22BD9000AA9AA /* kt_login_close.png */,
+				CAE3D9A117B22BD9000AA9AA /* kt_login_close@2x.png */,
+				CAE3D9A217B22BD9000AA9AA /* kt_login_kii_logo.png */,
+				CAE3D9A317B22BD9000AA9AA /* kt_login_kii_logo@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		CAE3D9AA17B22BD9000AA9AA /* KTTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9AB17B22BD9000AA9AA /* CKRefreshArrowView.h */,
+				CAE3D9AC17B22BD9000AA9AA /* CKRefreshArrowView.m */,
+				CAE3D9AD17B22BD9000AA9AA /* KTTableViewController.h */,
+				CAE3D9AE17B22BD9000AA9AA /* KTTableViewController.m */,
+			);
+			path = KTTableViewController;
+			sourceTree = "<group>";
+		};
+		CAE3D9AF17B22BD9000AA9AA /* KTUI */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9B017B22BD9000AA9AA /* KTAlert */,
+				CAE3D9B817B22BD9000AA9AA /* KTButton */,
+				CAE3D9BB17B22BD9000AA9AA /* KTCircularProgressIndicator */,
+				CAE3D9BE17B22BD9000AA9AA /* KTImageView */,
+				CAE3D9C117B22BD9000AA9AA /* KTLoader */,
+				CAE3D9C917B22BD9000AA9AA /* KTProgressBar */,
+				CAE3D9CC17B22BD9000AA9AA /* KTTextField */,
+				CAE3D9CF17B22BD9000AA9AA /* KTUI.h */,
+			);
+			path = KTUI;
+			sourceTree = "<group>";
+		};
+		CAE3D9B017B22BD9000AA9AA /* KTAlert */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9B117B22BD9000AA9AA /* KTAlert.h */,
+				CAE3D9B217B22BD9000AA9AA /* KTAlert.m */,
+				CAE3D9B317B22BD9000AA9AA /* KTAlertType */,
+			);
+			path = KTAlert;
+			sourceTree = "<group>";
+		};
+		CAE3D9B317B22BD9000AA9AA /* KTAlertType */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9B417B22BD9000AA9AA /* KTAlertBar.h */,
+				CAE3D9B517B22BD9000AA9AA /* KTAlertBar.m */,
+				CAE3D9B617B22BD9000AA9AA /* KTAlertToast.h */,
+				CAE3D9B717B22BD9000AA9AA /* KTAlertToast.m */,
+			);
+			path = KTAlertType;
+			sourceTree = "<group>";
+		};
+		CAE3D9B817B22BD9000AA9AA /* KTButton */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9B917B22BD9000AA9AA /* KTButton.h */,
+				CAE3D9BA17B22BD9000AA9AA /* KTButton.m */,
+			);
+			path = KTButton;
+			sourceTree = "<group>";
+		};
+		CAE3D9BB17B22BD9000AA9AA /* KTCircularProgressIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9BC17B22BD9000AA9AA /* KTCircularProgressIndicator.h */,
+				CAE3D9BD17B22BD9000AA9AA /* KTCircularProgressIndicator.m */,
+			);
+			path = KTCircularProgressIndicator;
+			sourceTree = "<group>";
+		};
+		CAE3D9BE17B22BD9000AA9AA /* KTImageView */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9BF17B22BD9000AA9AA /* KTImageView.h */,
+				CAE3D9C017B22BD9000AA9AA /* KTImageView.m */,
+			);
+			path = KTImageView;
+			sourceTree = "<group>";
+		};
+		CAE3D9C117B22BD9000AA9AA /* KTLoader */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9C217B22BD9000AA9AA /* images */,
+				CAE3D9C717B22BD9000AA9AA /* KTLoader.h */,
+				CAE3D9C817B22BD9000AA9AA /* KTLoader.m */,
+			);
+			path = KTLoader;
+			sourceTree = "<group>";
+		};
+		CAE3D9C217B22BD9000AA9AA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9C317B22BD9000AA9AA /* failure-indicator.png */,
+				CAE3D9C417B22BD9000AA9AA /* failure-indicator@2x.png */,
+				CAE3D9C517B22BD9000AA9AA /* success-indicator.png */,
+				CAE3D9C617B22BD9000AA9AA /* success-indicator@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		CAE3D9C917B22BD9000AA9AA /* KTProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9CA17B22BD9000AA9AA /* KTProgressIndicator.h */,
+				CAE3D9CB17B22BD9000AA9AA /* KTProgressIndicator.m */,
+			);
+			path = KTProgressBar;
+			sourceTree = "<group>";
+		};
+		CAE3D9CC17B22BD9000AA9AA /* KTTextField */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9CD17B22BD9000AA9AA /* KTTextField.h */,
+				CAE3D9CE17B22BD9000AA9AA /* KTTextField.m */,
+			);
+			path = KTTextField;
+			sourceTree = "<group>";
+		};
+		CAE3D9D017B22BD9000AA9AA /* KTUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9D117B22BD9000AA9AA /* Categories */,
+				CAE3D9E117B22BD9000AA9AA /* KTNetworkingUtilities.h */,
+				CAE3D9E217B22BD9000AA9AA /* KTNetworkingUtilities.m */,
+				CAE3D9E317B22BD9000AA9AA /* KTUtilities.h */,
+			);
+			path = KTUtilities;
+			sourceTree = "<group>";
+		};
+		CAE3D9D117B22BD9000AA9AA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9D217B22BD9000AA9AA /* NSMutableArray */,
+				CAE3D9D517B22BD9000AA9AA /* NSString */,
+				CAE3D9D817B22BD9000AA9AA /* UIColor */,
+				CAE3D9DB17B22BD9000AA9AA /* UIImage */,
+				CAE3D9DE17B22BD9000AA9AA /* UIView */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		CAE3D9D217B22BD9000AA9AA /* NSMutableArray */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9D317B22BD9000AA9AA /* NSMutableArray+KTUtilities.h */,
+				CAE3D9D417B22BD9000AA9AA /* NSMutableArray+KTUtilities.m */,
+			);
+			path = NSMutableArray;
+			sourceTree = "<group>";
+		};
+		CAE3D9D517B22BD9000AA9AA /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9D617B22BD9000AA9AA /* NSString+KTUtilities.h */,
+				CAE3D9D717B22BD9000AA9AA /* NSString+KTUtilities.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		CAE3D9D817B22BD9000AA9AA /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9D917B22BD9000AA9AA /* UIColor+KTUtilities.h */,
+				CAE3D9DA17B22BD9000AA9AA /* UIColor+KTUtilities.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		CAE3D9DB17B22BD9000AA9AA /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9DC17B22BD9000AA9AA /* UIImage+KTUtilities.h */,
+				CAE3D9DD17B22BD9000AA9AA /* UIImage+KTUtilities.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		CAE3D9DE17B22BD9000AA9AA /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3D9DF17B22BD9000AA9AA /* UIView+KTUtilities.h */,
+				CAE3D9E017B22BD9000AA9AA /* UIView+KTUtilities.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		086A70B0170944D600D6FEDA /* KTImageViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 086A70F7170944D600D6FEDA /* Build configuration list for PBXNativeTarget "KTImageViewSample" */;
+			buildPhases = (
+				086A70AD170944D600D6FEDA /* Sources */,
+				086A70AE170944D600D6FEDA /* Frameworks */,
+				086A70AF170944D600D6FEDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KTImageViewSample;
+			productName = KTImageViewSample;
+			productReference = 086A70B1170944D600D6FEDA /* KTImageViewSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		086A70A9170944D600D6FEDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Kii;
+			};
+			buildConfigurationList = 086A70AC170944D600D6FEDA /* Build configuration list for PBXProject "KTImageViewSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 086A70A8170944D600D6FEDA;
+			productRefGroup = 086A70B2170944D600D6FEDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				086A70B0170944D600D6FEDA /* KTImageViewSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		086A70AF170944D600D6FEDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE3D9F517B22BD9000AA9AA /* KTLoginViewController.html in Resources */,
+				CAE3DA0117B22BD9000AA9AA /* library_background.png in Resources */,
+				CAE3D9E617B22BD9000AA9AA /* .gitignore in Resources */,
+				CAE3DA0517B22BD9000AA9AA /* KiiToolkit.podspec in Resources */,
+				CAE3D9F017B22BD9000AA9AA /* KTButton.html in Resources */,
+				CAE3D9FE17B22BD9000AA9AA /* button_bar_background.png in Resources */,
+				CAE3DA0017B22BD9000AA9AA /* disclosure_open.png in Resources */,
+				CAE3D9FB17B22BD9000AA9AA /* styles.css in Resources */,
+				086A70BF170944D600D6FEDA /* InfoPlist.strings in Resources */,
+				CAE3DA0217B22BD9000AA9AA /* title_background.png in Resources */,
+				CAE3DA1817B22BD9000AA9AA /* failure-indicator.png in Resources */,
+				CAE3DA2617B22BD9000AA9AA /* README.md in Resources */,
+				CAE3D9F617B22BD9000AA9AA /* KTNetworkingUtilities.html in Resources */,
+				CAE3D9EA17B22BD9000AA9AA /* UIImage+KTUtilities.html in Resources */,
+				CAE3D9F417B22BD9000AA9AA /* KTLoader.html in Resources */,
+				CAE3DA0917B22BD9000AA9AA /* kt_login_close.png in Resources */,
+				CAE3DA1A17B22BD9000AA9AA /* success-indicator.png in Resources */,
+				CAE3DA0317B22BD9000AA9AA /* index.html in Resources */,
+				CAE3D9E917B22BD9000AA9AA /* UIColor+KTUtilities.html in Resources */,
+				CAE3D9FF17B22BD9000AA9AA /* disclosure.png in Resources */,
+				086A70DC170944D600D6FEDA /* UploadViewController.xib in Resources */,
+				086A70DF170944D600D6FEDA /* DownloadViewController.xib in Resources */,
+				CAE3D9E817B22BD9000AA9AA /* NSString+KTUtilities.html in Resources */,
+				CAE3D9F217B22BD9000AA9AA /* KTForgotPasswordViewController.html in Resources */,
+				CAE3D9F717B22BD9000AA9AA /* KTProgressIndicator.html in Resources */,
+				CAE3D9EB17B22BD9000AA9AA /* UIView+KTUtilities.html in Resources */,
+				CAE3D9EC17B22BD9000AA9AA /* KTAlert.html in Resources */,
+				CAE3D9F817B22BD9000AA9AA /* KTRegistrationViewController.html in Resources */,
+				CAE3D9F117B22BD9000AA9AA /* KTCircularProgressIndicator.html in Resources */,
+				CAE3DA1B17B22BD9000AA9AA /* success-indicator@2x.png in Resources */,
+				CAE3DA0717B22BD9000AA9AA /* kt_login_bg.png in Resources */,
+				CAE3DA0C17B22BD9000AA9AA /* kt_login_kii_logo@2x.png in Resources */,
+				CAE3D9ED17B22BD9000AA9AA /* KTAlertBar.html in Resources */,
+				CAE3D9FC17B22BD9000AA9AA /* stylesPrint.css in Resources */,
+				CAE3DA0817B22BD9000AA9AA /* kt_login_bg@2x.png in Resources */,
+				CAE3DA0A17B22BD9000AA9AA /* kt_login_close@2x.png in Resources */,
+				CAE3DA1917B22BD9000AA9AA /* failure-indicator@2x.png in Resources */,
+				CAE3DA2517B22BD9000AA9AA /* LICENSE in Resources */,
+				CAE3D9EE17B22BD9000AA9AA /* KTAlertToast.html in Resources */,
+				CAE3D9FA17B22BD9000AA9AA /* KTTextField.html in Resources */,
+				CAE3D9E717B22BD9000AA9AA /* NSMutableArray+KTUtilities.html in Resources */,
+				CAE3D9EF17B22BD9000AA9AA /* KTAppRater.html in Resources */,
+				CAE3DA0B17B22BD9000AA9AA /* kt_login_kii_logo.png in Resources */,
+				CAE3D9F317B22BD9000AA9AA /* KTImageView.html in Resources */,
+				CAE3D9FD17B22BD9000AA9AA /* hierarchy.html in Resources */,
+				CAE3DA0417B22BD9000AA9AA /* KTTableViewDelegate.html in Resources */,
+				CAE3D9F917B22BD9000AA9AA /* KTTableViewController.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		086A70AD170944D600D6FEDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE3DA1217B22BD9000AA9AA /* KTAlert.m in Sources */,
+				086A70C1170944D600D6FEDA /* main.m in Sources */,
+				CAE3DA1417B22BD9000AA9AA /* KTAlertToast.m in Sources */,
+				CAE3DA2117B22BD9000AA9AA /* UIColor+KTUtilities.m in Sources */,
+				CAE3DA2217B22BD9000AA9AA /* UIImage+KTUtilities.m in Sources */,
+				CAE3DA1F17B22BD9000AA9AA /* NSMutableArray+KTUtilities.m in Sources */,
+				CAE3DA1017B22BD9000AA9AA /* CKRefreshArrowView.m in Sources */,
+				086A70C5170944D600D6FEDA /* AppDelegate.m in Sources */,
+				CAE3DA2017B22BD9000AA9AA /* NSString+KTUtilities.m in Sources */,
+				CAE3DA1717B22BD9000AA9AA /* KTImageView.m in Sources */,
+				CAE3DA0F17B22BD9000AA9AA /* KTRegistrationViewController.m in Sources */,
+				CAE3DA1C17B22BD9000AA9AA /* KTLoader.m in Sources */,
+				CAE3DA1517B22BD9000AA9AA /* KTButton.m in Sources */,
+				CAE3DA0617B22BD9000AA9AA /* KTAppRater.m in Sources */,
+				086A70CE170944D600D6FEDA /* UploadViewController.m in Sources */,
+				CAE3DA1117B22BD9000AA9AA /* KTTableViewController.m in Sources */,
+				CAE3DA2417B22BD9000AA9AA /* KTNetworkingUtilities.m in Sources */,
+				CAE3DA0D17B22BD9000AA9AA /* KTForgotPasswordViewController.m in Sources */,
+				CAE3DA1E17B22BD9000AA9AA /* KTTextField.m in Sources */,
+				086A70D5170944D600D6FEDA /* DownloadViewController.m in Sources */,
+				CAE3DA0E17B22BD9000AA9AA /* KTLoginViewController.m in Sources */,
+				CAE3DA1D17B22BD9000AA9AA /* KTProgressIndicator.m in Sources */,
+				CAE3DA1317B22BD9000AA9AA /* KTAlertBar.m in Sources */,
+				CAE3DA2317B22BD9000AA9AA /* UIView+KTUtilities.m in Sources */,
+				CAE3DA1617B22BD9000AA9AA /* KTCircularProgressIndicator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		086A70BD170944D600D6FEDA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				086A70BE170944D600D6FEDA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		086A70DA170944D600D6FEDA /* UploadViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				086A70DB170944D600D6FEDA /* en */,
+			);
+			name = UploadViewController.xib;
+			sourceTree = "<group>";
+		};
+		086A70DD170944D600D6FEDA /* DownloadViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				086A70DE170944D600D6FEDA /* en */,
+			);
+			name = DownloadViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		086A70F5170944D600D6FEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		086A70F6170944D600D6FEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		086A70F8170944D600D6FEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"/Users/Beauchamp/Code/Kii/KTImageViewSample-iOS",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KTImageViewSample/KTImageViewSample-Prefix.pch";
+				INFOPLIST_FILE = "KTImageViewSample/KTImageViewSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		086A70F9170944D600D6FEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"/Users/Beauchamp/Code/Kii/KTImageViewSample-iOS",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KTImageViewSample/KTImageViewSample-Prefix.pch";
+				INFOPLIST_FILE = "KTImageViewSample/KTImageViewSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		086A70AC170944D600D6FEDA /* Build configuration list for PBXProject "KTImageViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086A70F5170944D600D6FEDA /* Debug */,
+				086A70F6170944D600D6FEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		086A70F7170944D600D6FEDA /* Build configuration list for PBXNativeTarget "KTImageViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086A70F8170944D600D6FEDA /* Debug */,
+				086A70F9170944D600D6FEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 086A70A9170944D600D6FEDA /* Project object */;
+}
